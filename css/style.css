@@ -1,0 +1,371 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(3, 14, 49);
+    color: white;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: rgb(23, 30, 53);
+}
+
+/* header section */
+
+nav.top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 265px;
+    background-color: rgb(23, 30, 53);
+}
+nav.top .header_logo span:first-child {
+    color: rgb(28, 59, 196);
+    font-size: 14px;
+}
+nav.top .header_logo{
+    padding-top: 5px;
+}
+nav.top .header_logo span:last-child {
+    color: white;
+    line-height: 1;
+}
+nav.top .print{
+    color: white;
+    background-color: rgb(64, 67, 224);
+    padding: 5px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+nav.top .print span i{
+    font-size: 14px;
+}
+
+/* profile_section */
+
+section.container .profile{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    clip-path: polygon(0 0,100% 0,100% 80%,25% 100%,0 80%);
+    padding-bottom: 35px;
+    background-color: rgba(11, 10, 29, 0.911)
+}
+section.container .profile .img_section .img_wrapper img{
+width: 128px;
+height: 128px;
+border-radius: 50%;
+object-fit: cover;
+object-position: center;
+}
+section.container .profile .img_section {
+    display: flex;
+    margin-left: 20px;
+}section.container .profile .img_section .name_section{
+    padding-top: 45px;
+    padding-left: 20px;
+    color: white;
+}
+section.container .profile .contact_detail ul{
+    /* border:1px solid red; */
+    list-style: none;
+    margin-right: 80px;
+
+}
+section.container .profile .contact_detail ul li {
+    /* border: 1px solid red; */
+    padding-bottom: 17px;
+    color: white;
+}
+section.container .profile .contact_detail ul li span a{
+    text-decoration: none;
+    color:white;
+}
+section.container .profile .contact_detail ul li .change{
+    color: white;
+    padding-right: 10px;
+    font-size: 18px;
+    font-weight: 800;
+}
+section.container .profile .contact_detail ul li .phone_set{
+    position: relative;
+    left: -6px;
+}
+section.container .profile .contact_detail ul li .icon_style_facebook{
+    border: 1px solid rgb(5, 124, 235);
+    padding: 5px 7px ;
+    background-color: rgb(5, 124, 235);
+    color: white;
+    border-radius: 50%;
+}
+section.container .profile .contact_detail ul li .icon_style_insta{
+    border: 1px solid  rgb(255, 0, 98);
+    padding: 5px 7px;
+    background-color: rgb(255, 0, 98);
+    color: white;
+    border-radius: 50%;
+    margin-left: 5px;
+    
+}
+
+
+section.container .profile .contact_detail ul li .icon_style_twiter{
+    border: 1px solidrgb(14, 247, 247);
+    padding: 7px 7px;
+    background-color: rgb(14, 247, 247);
+    color: white;
+    border-radius: 50%;
+    margin-left: 10px;
+    
+}
+
+/* about us section */
+section.container .about_us {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+}
+section.container .about_us .detail{
+    padding-left: 20px;
+}
+section.container .about_us .name{
+    color: indigo;
+    font-size: 23px;
+    font-weight:600 ;
+}
+section.container .about_us h4::after{
+    content: "";
+    background: #f44336;
+    height: 2.4px;
+    width: 14%;
+    display: block;
+    margin: 3px 0;
+
+}
+section.container .about_us .detail p{
+    width: 480px;
+    margin: 5px 0;
+    padding-bottom: 15px;
+}
+section.container .about_us .detail span a{
+    text-decoration: none;
+    border: 2px solidrgb(231, 213, 213);
+    background-color: rgb(231, 213, 213);
+    padding: 8px 8px;
+    border-radius: 3px;
+    color: rgb(61, 30, 236);
+}
+section.container .about_us .info{
+    /* border: 1px solid red; */
+    margin-right: 80px;
+    width: 270px;
+   
+}
+section.container .about_us .info ul{
+    list-style: none;
+}
+section.container .about_us .info ul li.apply{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+}
+/* education and skill */
+
+
+section.container .education_skill .wrapper{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+section.container .education_skill{
+    padding-left: 20px;
+}
+section.container .education_skill h4::after{
+    content: "";
+    display: block;
+    background: #f44336;
+    height: 3px;
+    width: 7%;
+    margin: 3px 0;
+
+}
+section.container .education_wrapper{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    padding-left: 13px;
+}
+section.container .education_wrapper .edu_icons span i{
+    color: rgb(2, 83, 204);
+    font-size: 35px;
+    font-weight: 500;
+    padding: 5px 0;
+    margin-left:10px ;
+}
+section.container .education_wrapper ul li{
+    /* border: 1px solid red; */
+    padding: 5px 0;
+}
+section.container .skill {
+    width: 40%;
+    margin-right: 60px;
+}
+section.container .skill .skill_wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+section.container .skill .skill_wrapper .first{
+    /* border: 1px solid red; */
+    margin: 2px 10px;
+    margin-bottom: 10px;
+}
+section.container .skill .skill_wrapper .first span i{
+    font-size: 50px;
+}
+/* contact section */
+section.container .contact h4{
+    /* border: 1px solid; */
+    padding-left: 18px;
+    margin-top: 14px;
+    margin-bottom: 13px;
+}
+
+section.container .contact h4::after{
+    content: "";
+    background: #f44336;
+    height: 2.4px;
+    width: 8%;
+    display: block;
+    margin: 3px 0;
+}
+section.container .contact_wrapper{
+    position: relative;
+    /* border:1px solid red; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+section.container .contact_wrapper .msg_wrapper .contact_msg{
+    /* border:1px solid red; */
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+section.container .contact_wrapper .msg_wrapper .contact_msg .contact_move{
+    position: relative;
+    left: 40px;
+    top: -21px;
+}
+section.container .contact_wrapper .msg_wrapper .contact_msg input{
+    background-color: transparent;
+    width: 290px;
+    height: 30px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+section.container .contact_wrapper .msg_wrapper .text_msg{
+    /* border: 1px solid red; */
+    margin-top: 15px;
+    padding-left: 38px;
+}
+section.container .contact_wrapper .msg_wrapper .text_msg textarea{
+    background-color: transparent;
+    border-radius: 3px;
+    outline: none;
+}
+section.container .contact_wrapper .msg_wrapper button{
+    border: 1px solid  rgb(10, 96, 146);
+   padding: 7px 23px;
+   border-radius: 3px;
+   background-color: rgb(10, 96, 146);
+   cursor: pointer;
+   color: white;
+   margin-top: 10px;
+   margin-left: 35px;
+   margin-bottom: 30px;
+
+}
+section.container .contact_wrapper ul li{
+    /* border: 1px solid red; */
+    list-style: none;
+    margin-bottom: 25px ;
+    padding-left: 40px;
+}
+section.container .contact_wrapper ul li .contact_sel{
+    /* border: 1px solid red; */
+   margin-bottom: 10px;
+}
+section.container .contact_wrapper ul li .icon_styl{
+    /* border: 1px solid red; */
+    position:absolute ;
+    left: 17px;
+    color: rgb(75, 75, 204);
+    font-weight: 100;
+    
+}
+/* footer section */
+footer{
+    border: 1px solid rgb(4, 14, 104);
+    text-align: center;
+    background-color: rgb(4, 14, 104);
+    padding: 7px 0px;
+    font-size: 14px;
+}
+
+/* media query */
+@media (max-width:1500px){
+    nav.top {
+        padding: 10px 227px;
+    }
+}
+@media (max-width:1024px){
+    .container{
+        width: 912px;
+    }
+    nav.top {
+        padding: 10px 60px;
+    }
+}
+@media (min-width:375px){
+    nav.top {
+        width: 242%;
+    }
+}
+@media (max-width:500px){
+    nav.top {
+        width: 184%;
+    }
+    .container {
+        width: 1210px;
+    }
+}
+@media (min-width:425px){
+    nav.top {
+        width: 242%;
+        padding: 10px 20px;
+    }
+    .container{
+        width: 1029px;
+    }
+    section.container .profile {
+        clip-path:none;
+        display: flex;
+        padding-bottom: 18px;
+        /* flex-direction: column; */
+    }
+    section.container .about_us {
+        margin-top: 22px;
+    }
+}
+
